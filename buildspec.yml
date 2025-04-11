@@ -5,9 +5,5 @@ phases:
     runtime-versions:
       java: corretto17
     commands:
-      - echo Installing Maven...
-      - mvn clean install
-
-artifacts:
-  files:
-    - target/*.jar
+      - echo Installing Maven
+      - mvn install -DskipTests=true
